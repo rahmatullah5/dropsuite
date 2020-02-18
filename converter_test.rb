@@ -27,7 +27,7 @@ class ConverterTest < Test::Unit::TestCase
   end
 
   def test_with_empty_folder
-    # assert_equal 'There is no file detected', Converter.new('DropsuiteTest/C').call, "function should return validation message"
+    assert_equal 'No files detected', Converter.new('DropsuiteTest/C').call, "function should return validation message"
   end
 
   def test_with_fictitious_folder
